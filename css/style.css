@@ -1,0 +1,82 @@
+/*
+#contenedor{
+    color: green;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+*/    
+body{
+    margin: 0%;
+}
+#cabecera{
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    animation: cambiarcolor 2s ease-in-out infinite;
+    
+    
+}
+/*
+img{
+    width: 250px; 
+    height: 250 px;
+}
+*/    
+
+#padre{
+    width: 100vw;
+    
+
+}
+#hijo1{
+    width: 50%;
+    height: 100%;
+    float: left;
+
+
+}
+#hijo2{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+#titulo{
+    margin: 0px;
+    animation: mover 19s ease-in-out infinite ;
+}
+@keyframes mover {
+    0%{
+        transform: translateY(0px);
+    }
+    18%{
+        transform: translateY(50%) translateX(50%);
+    }
+    38%{
+        transform: translateY(0px) translateX(100%);
+    }
+    49%{
+        transform: translateY(100%) translateX(100%);
+
+    }
+    64%{
+        transform: translateY(50%) translateX(50%);
+
+    }
+    82%{
+        transform: translateY(100%) translateX(0%);
+
+    }
+    100%{
+        transform: translateY(0%) translateX(0%);
+    }
+}
+
+@keyframes cambiarcolor{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: aqua;
+    }
+}
